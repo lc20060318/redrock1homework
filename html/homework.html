@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #g {
+            background: pink;
+            width: 120px;
+            height: 100px
+        }
+
+        #gui {
+            width: 300px;
+        }
+
+        #about {
+            width: 400px;
+            height: 40px;
+        }
+
+        #what {
+            text-align: center;
+        }
+
+        #o {
+            text-align: center;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2>二级标题</h2>
+    <p>我能说什么呢</p>
+    <h3>三级标题</h3>
+    <p>你想要的图片</p>
+    <img src="../1.jpg" width="300">
+    <div id="g">啦啦啦我是个粉盒子</div>
+    <a href="http://www.baidu.com">点击我可以跳转到百度哦</a>
+    <ul>
+        <li>我</li>
+        <li>好</li>
+        <li>喜</li>
+        <li>欢</li>
+        <li>你</li>
+    </ul>
+    <input type="text" value="随便你输入" id="gui"> <input type="button" value="随便你点哦">
+    <form>
+        <p>啦啦啦我是一个表格</p>
+        <table id="about" border="1" cellspacing="0">
+            <tr>
+                <td>用户名:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>密码：</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr id="what">
+                <td colspan="2"><input type="submit" value="提交"><input type="reset" value="重开"></td>
+            </tr>
+            </tr>
+        </table>
+        性别 <label for="sex">男</label><input type="radio" name="the" id="sex">
+        <label for="what">女</label><input type="radio" name="the" id="what">
+        城市<select>
+            <option>重庆</option>
+            <option>山东</option>
+            <option>火星</option>
+        </select>
+        爱好: 听音乐<input type="checkbox">打游戏<input type="checkbox">运动<input type="checkbox">看电影<input type="checkbox"><br>
+        目标 <textarea cols="20" rows="6">谢谢你看到这里捏</textarea>
+    </form>
+</body>
+
+</html>
