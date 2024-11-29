@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person = {
+            name:'kotori',
+            age:'17'
+        }
+        let person1 = person;
+        //将person的地址给到person1，person1与person都会有权力访问同一个地址
+        person1.name = 'minazuki';
+        
+        console.log(person.name);
+        console.log(person1.name);
+        //二者输出name的结果相同，是因为person1访问的就是person的空间，因为他的地址指向的就是person对应的空间，person1改变了person里的变量，那么person里的对应变量也要跟着变
+    </script>
+</body>
+</html>
