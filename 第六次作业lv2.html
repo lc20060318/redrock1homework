@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    ul {
+        background-color: pink;
+    }
+</style>
+<body>
+    <button>发送</button>
+    <textarea name="" id="">123</textarea>
+    <h4>评论区</h4>
+    <ul></ul>
+</body>
+<script>
+   let button = document.querySelector("button");
+   let text = document.querySelector("textarea");
+   let ul = document.getElementsByTagName("ul");
+   button.onclick = function() {
+    if (text.value = ""){
+    alert("please enter words");
+return false;}
+    else {let li = document.createElement('li');
+       li.innerHTML = text.value;
+       ul.appendChild(li);
+   }
+   }
+</script>
+</html>
